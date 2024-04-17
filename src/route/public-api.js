@@ -3,9 +3,10 @@ import userController from "../controller/user-controller.js";
 
 const publicRouter = new express.Router();
 
-publicRouter.post('/api/auth/register', userController.register); 
-publicRouter.post('/api/auth/login', userController.login); 
+publicRouter.get("/api", (req, res) => {
+  res.status(200).json({ message: "Welcome to the MTF API" });
+});
+publicRouter.post("/api/auth/register", userController.register);
+publicRouter.post("/api/auth/login", userController.login);
 
-export {
-    publicRouter
-}
+export { publicRouter };
