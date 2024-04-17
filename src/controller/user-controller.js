@@ -33,7 +33,7 @@ const login = async (req, res, next) => {
       .cookie("usertoken", token, {
         httpOnly: true,
         maxAge: age,
-        sameSite: none
+        sameSite: "none"
       })
       .status(200)
       .json({
