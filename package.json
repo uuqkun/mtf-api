@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "nodemon --watch",
-    "test": "jest -i"
+    "test": "jest -i",
+    "postinstall": "prisma generate"
   },
   "jest": {
     "transform": {
