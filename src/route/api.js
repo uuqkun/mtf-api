@@ -11,7 +11,7 @@ userRouter.use(verifyToken);
 userRouter.get("/api/users", userController.users);
 userRouter.get("/api/users/:id", userController.user);
 userRouter.put("/api/users/:id", userController.update);
-userRouter.post('/api/users/logout', userController.logout); 
+// userRouter.post('/api/users/logout', userController.logout); 
 
 
 // Members API

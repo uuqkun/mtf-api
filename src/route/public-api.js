@@ -8,6 +8,7 @@ publicRouter.get("/api", (req, res) => {
 });
 publicRouter.post('/api/auth/register', userController.register); 
 publicRouter.post('/api/auth/login', userController.login); 
+publicRouter.post('/api/auth/logout', userController.logout); 
 
 export {
     publicRouter
